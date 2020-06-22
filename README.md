@@ -1,26 +1,26 @@
-# Informações gerais
+# General information
 
-A aplicação desenvolvida realiza a leitura de um arquivo, sorteia uma das linhas presentes no arquivo e exibe a linha sorteada no console.
+This application reads one plain text file, sorts one line and display it on terminal.
 
-O projeto foi desenvolvido com Python3.
+Project developed with Python 3 and Unit Tests.
 
-# Uso
+# Use
 
-1 - É preciso colocar o arquivo a ser lido na pasta __raiz__, antes do `src/`. Caso nãe seja colocado um arquivo para ser lido, o programa irá ler o arquivo `v.txt` que está na raiz do projeto.
+1 - Is necessary put the file that will be read on the project **root** folder, before `src/`. If the file is not placed, the program will read `v.txt` file that is in the root of the project.
 
-2 - Executar o arquivo principal:
+
+2 - Run the main file:
 
 ```bash
 $ python3 run.py
 ```
+3 - Type the name of the file that you wants to read.
 
-3 - Digitar o nome do arquivo e apertar enter. __Reforçando__ que não é obrigatório colocar um arquivo, pois o projeto já vem com o `v.txt`. 
+4 - After reading the file, will be display the selected line on terminal.
 
-4 - Após realizar a leitura do arquivo, será exibido no console a linha sorteada.
+# Tests
 
-# Testes
-
-Comando para executar os testes:
+Command to run the tests:
 
 ```bash
 $ python3 -m unittest discover -s tests/
