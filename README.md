@@ -1,6 +1,6 @@
 # General information
 
-This application reads one plain text file, sorts one line and display it on terminal.
+This application reads one plain text file, get one random line and display it on terminal.
 
 Project developed with Python 3 and Unit Tests.
 

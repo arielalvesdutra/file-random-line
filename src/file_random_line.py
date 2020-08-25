@@ -1,14 +1,13 @@
 import random
 
-
-class FileValueSorter:
+class FileRandomLine:
     
     def __init__(self, parameter_file):
         self._validate_file(parameter_file)
         
         self.file = parameter_file
         
-    def sort_file_value(self):
+    def get_file_random_line(self):
         opened_file_values = self._get_file_values()
         random_index = random.randrange(0, len(opened_file_values))
         return opened_file_values[random_index]

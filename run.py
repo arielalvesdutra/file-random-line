@@ -1,5 +1,5 @@
 import os
-from src.file_value_sorter import FileValueSorter
+from src.file_random_line import FileRandomLine
 
 file_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -20,7 +20,7 @@ def open_file():
     return opened_file
 
 
-def show_sorted_result(result):
+def show_draw_result(result):
     print("O valor sorteado foi:")
     print(">>>",result, "<<<")
     
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     presentation()
     opened_file = open_file()
 
-    file_sorter = FileValueSorter(opened_file)
-    sorted_value = file_sorter.sort_file_value()
+    file_sorter = FileRandomLine(opened_file)
+    sorted_value = file_sorter.get_file_random_line()
 
-    show_sorted_result(sorted_value)
+    show_draw_result(sorted_value)
